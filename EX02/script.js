@@ -1,13 +1,18 @@
-let seconde = 0
-let minute = 0
+let sec = 0
+let min = 0
 
 function timer(){
 
-    document.getElementById('times').innerHTML = (minute + ":" + seconde);
+    document.getElementById('times').innerHTML = (min + ":" + sec);
 
-    seconde++;
+    sec++;
 
-    if (seconde === 60){minute++}
+    if (sec === 60){
+        min++
+        sec = 0;
+
+        alert(min + "minute(s) vient de passer")
+    }
 
     else{}
 
