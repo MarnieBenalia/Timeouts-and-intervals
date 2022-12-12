@@ -11,10 +11,7 @@ function timer(){
         min++
         sec = 0;
 
-        alert(min + "minute(s) vient de passer")
+        console.log(min +" "+ "minute(s) vient de passer")
     }
-
-    else{}
-
 }
 setInterval(timer,1000)
