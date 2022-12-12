@@ -1,16 +1,15 @@
-let timer = 0
+let seconde = 0
+let minute = 0
 
-function secPassed(){
+function timer(){
 
-    document.getElementById('times').innerHTML = (sec)
-    sec++
+    document.getElementById('times').innerHTML = (minute + ":" + seconde);
+
+    seconde++;
+
+    if (seconde === 60){minute++}
+
+    else{}
+
 }
-
-function minPassed(){
-
-    document.getElementById('timer').innerHTML = (min)
-    min++
-}
-
-setInterval(secPassed, 1000);
-setInterval(minPassed, 60000);
+setInterval(timer,1000)
